@@ -43,11 +43,14 @@ class Details extends StatelessWidget {
               ),
             ),
           ),
-          new Positioned(
-            top: 24,
-              child: new IconButton(
+          new Align(
+            alignment: Alignment.topLeft,
+              child: new Padding(
+                padding: const EdgeInsets.only(top: 24.0),
+                child: new IconButton(
                   icon: new Icon(Icons.chevron_left),
                   onPressed: (){Navigator.pop(context);}
+                )
               )
           )
         ],
