@@ -18,12 +18,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   initState() {
     super.initState();
-
-    fMovieList = _loadData();
-  }
-
-  Future<List> _loadData() async {
-    return await ApiRequests().fetchAllMovies();
+    fMovieList = ApiRequests().fetchAllMovies();
   }
 
   @override
